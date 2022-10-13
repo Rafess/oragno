@@ -20,3 +20,7 @@
     box-sizing: border-box;
     border-radius: 15px;
 }
+
+.text-field input{
+    cursor: pointer;
+}
