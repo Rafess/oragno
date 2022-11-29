@@ -4,6 +4,7 @@ import './Team.css'
 const Team = (props) => {
 
     return(
+    props.collaborators.length > 0 && 
     <section className='team' style={{ backgroundColor: props.corSecundaria }}>
         <h3 style={{ borderColor: props.corPrimaria }}>{props.nome}</h3>
         <div className='collabs'>
