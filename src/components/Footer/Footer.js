@@ -4,13 +4,13 @@ import './Footer.css'
     return(
         <footer>
             <div className='social'>
-                <a href='#blank'>
+                <a href='facebook.com'>
                     <img src='./imagens/fb.png' alt='facebook logo'/>
                 </a>
-                <a href="#blank">
+                <a href="twitter.com">
                     <img src='./imagens/tw.png' alt='twitter logo'/>
                 </a>
-                <a href="#blank">
+                <a href="instagram.com">
                     <img src='./imagens/ig.png' alt='instagram logo'/>
                 </a>
             </div>

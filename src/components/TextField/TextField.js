@@ -7,7 +7,6 @@ const TextField = (props) => {
   const onType = (event) => {
     props.onChange(event.target.value);
     setValor(event.target.value);
-    console.log(value)
   };
 
   return (

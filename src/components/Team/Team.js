@@ -14,6 +14,7 @@ const Team = (props) => {
         name={collab.name} 
         cargo={collab.cargo} 
         imagem={collab.imagem}
+        corDeFundo={props.corPrimaria}
         />
         )}
         </div>

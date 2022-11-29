@@ -8,7 +8,6 @@ import Footer from "./components/Footer/Footer";
 function App() {
   const [collabs, setCollabs] = useState([]);
   const onNewCollabAdded = (collab) => {
-    console.log(collab)
     setCollabs([...collabs, collab]);
   }
   const times = [
