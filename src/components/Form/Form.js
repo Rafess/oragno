@@ -19,7 +19,11 @@ const Form = (props) => {
       cargo,
       imagem, 
       team
-    })
+    });
+    setName('');
+    setCargo('');
+    setImagem('');
+    setTeam('');
   }
   return (
     <section className="form">

@@ -2,6 +2,8 @@ import { useState } from "react";
 import Banner from "./components/Banner/Banner";
 import Form from "./components/Form/Form";
 import Team from "./components/Team/Team";
+import Footer from "./components/Footer/Footer";
+
 
 function App() {
   const [collabs, setCollabs] = useState([]);
@@ -57,6 +59,7 @@ function App() {
         collaborators={collabs.filter((collab) => collab.team === time.nome)}
         />
         )}
+      <Footer/>
     </div>
   );
 }
