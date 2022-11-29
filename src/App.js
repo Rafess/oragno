@@ -4,10 +4,10 @@ import Form from "./components/Form/Form";
 import Team from "./components/Team/Team";
 
 function App() {
-  const [colabs, setCollabs] = useState([]);
+  const [collabs, setCollabs] = useState([]);
   const onNewCollabAdded = (collab) => {
     console.log(collab)
-    setCollabs([...colabs, collab]);
+    setCollabs([...collabs, collab]);
   }
   const times = [
     {    
@@ -48,7 +48,14 @@ function App() {
         <Banner/>
         <Form onCollabRegister={collab => onNewCollabAdded(collab)} times={times.map((time) => time.nome)}/>
         {times.map(time => 
-        <Team key={time.nome} nome={time.nome} teams={times} corPrimaria={time.corPrimaria} corSecundaria={time.corSecundaria}/>
+        <Team 
+        key={time.nome} 
+        nome={time.nome} 
+        teams={times} 
+        corPrimaria={time.corPrimaria} 
+        corSecundaria={time.corSecundaria}
+        collaborators={collabs.filter((collab) => collab.team === time.nome)}
+        />
         )}
     </div>
   );
